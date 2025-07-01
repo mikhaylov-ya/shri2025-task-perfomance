@@ -34,13 +34,17 @@
     </div>
 </footer>
 
-<script type="text/javascript">
+<script src="vendors/babel.min.js"></script>
+<script type="text/babel">
     function Header() {
         let [expanded, setExpanded] = React.useState(false);
         let [toggled, setToggled] = React.useState(false);
 
         const onClick = () => {
-            if (!toggled) setToggled(true);
+            if (!toggled) {
+                setToggled(true);
+            }
+
             setExpanded(!expanded);
         };
 
