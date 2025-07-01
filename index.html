@@ -201,9 +201,7 @@
             }]
         }
     };
-    for (let i = 0; i < 6; ++i) {
-        TABS.all.items = [...TABS.all.items, ...TABS.all.items];
-    }
+    
     const TABS_KEYS = Object.keys(TABS);
 
     function Main() {
@@ -223,10 +221,15 @@
             setActiveTab(event.target.value);
         };
 
-        let sizes = [];
-        const onSize = size => {
-            sizes = [...sizes, size];
-        };
+        const [sizes, setSizes] = React.useState([]);
+        const onSize = React.useCallback((size, index) => {
+            setSizes(prev => {
+                const newSizes = [...prev];
+                newSizes[index] = size;
+                return newSizes;
+            });
+        }, []);
+
 
         React.useEffect(() => {
             const sumWidth = sizes.reduce((acc, item) => acc + item.width, 0);
@@ -236,7 +239,7 @@
             if (newHasRightScroll !== hasRightScroll) {
                 setHasRightScroll(newHasRightScroll);
             }
-        });
+        }, [sizes, hasRightScroll]);
 
         const onArrowCLick = () => {
             const scroller = ref.current.querySelector('.section__panel:not(.section__panel_hidden)');
@@ -401,7 +404,7 @@
                 <Main />
             </>
         );
-    }, 100);
+    }, 1);
 </script>
 
 </body>
