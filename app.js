@@ -177,7 +177,7 @@ const TABS = {
     }]
   }
 };
-for (let i = 0; i < 6; ++i) TABS.all.items.push(...TABS.all.items);
+for (let i = 0; i < 2; ++i) TABS.all.items.push(...TABS.all.items);
 const TABS_KEYS = Object.keys(TABS);
 function Main() {
   const ref = React.useRef();
@@ -235,17 +235,13 @@ function Main() {
     className: "hero-dashboard__item-title"
   }, "\u0414\u043E\u043C\u0430"), /*#__PURE__*/React.createElement("div", {
     className: "hero-dashboard__item-details"
-  }, "+23", /*#__PURE__*/React.createElement("span", {
-    className: "a11y-hidden"
-  }, "\xB0"))), /*#__PURE__*/React.createElement("li", {
+  }, "+23")), /*#__PURE__*/React.createElement("li", {
     className: "hero-dashboard__item"
   }, /*#__PURE__*/React.createElement("div", {
     className: "hero-dashboard__item-title"
   }, "\u0417\u0430 \u043E\u043A\u043D\u043E\u043C"), /*#__PURE__*/React.createElement("div", {
     className: "hero-dashboard__item-details"
-  }, "+19", /*#__PURE__*/React.createElement("span", {
-    className: "a11y-hidden"
-  }, "\xB0"), /*#__PURE__*/React.createElement("div", {
+  }, "+19", /*#__PURE__*/React.createElement("div", {
     className: "hero-dashboard__icon hero-dashboard__icon_rain",
     role: "img",
     "aria-label": "\u0414\u043E\u0436\u0434\u044C"
