@@ -269,24 +269,14 @@ html, body {
 }
 
 .hero-dashboard {
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  gap: 0.9375rem;
-  height: 20.6875rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
-}
-
-.hero-dashboard__bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1260px;
-  height: auto;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 0;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    gap: 0.9375rem;
+    height: 20.6875rem;
+    background: no-repeat 50% 50% url(assets/hero_big.avif);
+    background-size: 1260px;
+    border-radius: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -302,7 +292,6 @@ html, body {
 .hero-dashboard__primary {
     flex: 1 1 auto;
     padding: 1.25rem 0 1.25rem 1.25rem;
-    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -316,7 +305,6 @@ html, body {
     font-size: 1.6875rem;
     font-weight: bold;
     color: #333333;
-    z-index: 1;
 }
 
 @media (max-width: 768px) {

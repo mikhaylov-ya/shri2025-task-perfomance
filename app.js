@@ -221,15 +221,7 @@ function Main() {
     className: "section__title section__title-header section__main-title"
   }, "\u0413\u043B\u0430\u0432\u043D\u043E\u0435"), /*#__PURE__*/React.createElement("div", {
     className: "hero-dashboard"
-  },  /*#__PURE__*/React.createElement("img", {
-    src: "assets/hero_big.avif",
-    alt: "",
-    className: "hero-dashboard__bg",
-    fetchpriority: "high",
-    decoding: "async",
-    loading: "eager",
-    "aria-hidden": "true"
-  }), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "hero-dashboard__primary"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "hero-dashboard__title"
