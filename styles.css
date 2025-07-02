@@ -280,11 +280,12 @@ html, body {
 
 .hero-dashboard__bg {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  top: 50%;
+  left: 50%;
+  width: 1260px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
   z-index: 0;
 }
 
@@ -328,6 +329,7 @@ html, body {
     margin: 0.375rem 0 0 0;
     font-size: 0.875rem;
     color: #333333;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -343,6 +345,7 @@ html, body {
     margin: 1.5625rem 0 0 0;
     padding: 0;
     list-style: none;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -354,11 +357,13 @@ html, body {
 .hero-dashboard__item {
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 .hero-dashboard__item-title {
     font-size: 0.875rem;
     color: #858585;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -374,6 +379,7 @@ html, body {
     font-size: 2.25rem;
     font-weight: bold;
     color: #333333;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -390,6 +396,7 @@ html, body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -401,6 +408,7 @@ html, body {
 
 .hero-dashboard__icon_rain {
     background-image: url(assets/cloud-drizzle.svg);
+    z-index: 1;
 }
 
 .hero-dashboard__schedule {
@@ -413,6 +421,7 @@ html, body {
     overflow: auto;
     list-style: none;
     scrollbar-width: none;
+    z-index: 1;
 }
 
 .hero-dashboard__schedule::-webkit-scrollbar {
